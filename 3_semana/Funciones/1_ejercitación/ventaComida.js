@@ -1,9 +1,12 @@
+
+ // Objeto para precios de base
 let tiposDeHamburguesa = {
     carneParrilla : 1800,
     pollo: 1500,
     vegetariana : 1200
 }
 
+// Objeto para precio de adiciones
 let precioAdiciones = {
     jamon : 30,
     queso : 25,
@@ -15,6 +18,8 @@ let precioAdiciones = {
     cebolla : 10,
 };
 
+//Objeto para pedido, en lugar de pasar a la funcion una variable por cada adicion solo le paso 
+//un objeto con las adiciones, true si lleva adicion false si no lleva
 let pedidoAdiciones = {
     jamon : true,
     queso : true,
@@ -26,6 +31,12 @@ let pedidoAdiciones = {
     cebolla : true,
 };
 
+
+function presioBase () {
+    // Funcion para determinar el precio de la base seleccionada
+    // Recibe como parametro un string  con el tipo de hamburguesa
+    
+}
 
 function claculoPrecio (base, adiciones) {
     let precioFinal = 0;
@@ -43,6 +54,7 @@ function claculoPrecio (base, adiciones) {
     if (precioFinal != 0){
         for (let i in adiciones) {
             if (adiciones[i]) {
+                console.log(tiposDeHamburguesa[i]);
                 precioFinal = precioFinal + precioAdiciones[i];
             }
         }
