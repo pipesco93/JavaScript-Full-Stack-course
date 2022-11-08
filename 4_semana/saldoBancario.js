@@ -36,7 +36,7 @@ function mensajeSaldo (nombe, apellido, arrayOperaciones, callback) {
 // array de operaciones y fincion callback para calcular saldo 
     let totalOperaciones = callback(arrayOperaciones);
     
-    let mensaje = `Estimado ${nombe} ${apellido} :
+    let mensaje = `Estimado/a ${nombe} ${apellido} :
     
     El monto total de los depositos es de: $${totalOperaciones[0]}.
     El monto total de los retiros es de: $${totalOperaciones[1]*-1}.

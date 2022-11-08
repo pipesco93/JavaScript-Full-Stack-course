@@ -5,13 +5,15 @@ function numerosPares (arrayNumeros) {
     let pruebaPar;
     let arrayPares = [];
     let i = 0;
+
     do {
         pruebaPar = arrayNumeros[i] % 2;
         if (pruebaPar == 0) {
             arrayPares.push(arrayNumeros[i]);
         }
-        i = i + 1;
+        i += 1;
     } while (i < arrayNumeros.length)
+    
     return arrayPares;
 }
 
