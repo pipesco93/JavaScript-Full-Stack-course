@@ -17,7 +17,7 @@ function calculoPago (listaCursos, cursosEstudiante) {
     for (let i = 0; i < cursosEstudiante.length; i++){
         for (let j = 0; j < listaCursos.length; j++){
             if (cursosEstudiante[i].toLowerCase() == listaCursos[j][0]){
-                pago = pago + listaCursos[j][1];
+                pago += listaCursos[j][1];
             }
         }
     }
