@@ -8,5 +8,5 @@ for (i in listaPelis){
 }
 
 // otra forma
-//listaPelis.forEach(i => console.log(i));
+listaPelis.forEach(i => console.log(i));
 
