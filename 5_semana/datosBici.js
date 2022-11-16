@@ -1,9 +1,14 @@
 let fs = require('fs');
 
-let jsonArray = fs.readFileSync('./bicicletas.json','utf-8');
+let jsonToObject = (jsonPath) =>{
+    let jsonArray = fs.readFileSync(jsonPath,'utf-8');
+    let object = JSON.parse(jsonArray);
+    return object
+}
 
-let array = JSON.parse(jsonArray);
+let path = './bicicletas.json';
+let jsonTransformed = jsonToObject(path);
 
-console.log(typeof(array));
+console.log(jsonTransformed);
 
-module.exports = array;
+module.exports = jsonTransformed;
