@@ -22,7 +22,7 @@
         "peso" : 16,
         "tipo" : "Montañera",
         "precio" : 120000,
-        "vendida" : "si"
+        "vendida" : "no"
     },
     {
         "id" : 3,
@@ -35,5 +35,17 @@
         "tipo" : "Montañera",
         "precio" : 120000,
         "vendida" : "si"
+    },
+    {
+        "id" : 4,
+        "marca" : "Giant",
+        "modelo" : "Anthem",
+        "rodado" : 29,
+        "anio" : 2021,
+        "color": "roja",
+        "peso" : 16,
+        "tipo" : "Montañera",
+        "precio" : 120000,
+        "vendida" : "no"
     }
 ]

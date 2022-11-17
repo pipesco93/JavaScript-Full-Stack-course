@@ -9,6 +9,6 @@ let jsonToObject = (jsonPath) =>{
 let path = './bicicletas.json';
 let jsonTransformed = jsonToObject(path);
 
-console.log(jsonTransformed);
+//console.log(jsonTransformed);
 
 module.exports = jsonTransformed;
