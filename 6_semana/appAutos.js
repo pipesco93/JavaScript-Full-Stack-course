@@ -28,15 +28,12 @@ let concesionaria = {
       return this.autosParaLaVenta().filter((element) => element.km < 100);
    },
    listaDeVentas: function(){
-      let vendidos = this.autos.filter((element) => element.vendido == true);
-    let venta = [];
-    vendidos.map(function(element){
-    	venta.push(element.precio)
-    });
-    return venta;
+   let vendidos = this.autos.filter((element) => element.vendido == true);
+   let venta = [];
+   vendidos.map((element) => venta.push(element.precio));
+   return venta;
    },
    totalDeVentas: function(){
-      
       return this.listaDeVentas().reduce((acum, num) => acum + num,0);
    },
    puedeComprar:function(auto, persona){
@@ -48,9 +45,8 @@ let concesionaria = {
       }
    },
    autosQuePuedeComprar: function(persona){
-      return this.autosParaLaVenta().filter(element=>this.puedeComprar(element,persona));
-     	
+      return this.autosParaLaVenta().filter(element => this.puedeComprar(element,persona));
    },
 };
 
-console.log(concesionaria.buscarAuto('APL123'));
+console.log(concesionaria.listaDeVentas());
