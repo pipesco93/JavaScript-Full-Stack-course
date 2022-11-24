@@ -12,6 +12,7 @@ let concesionaria = {
          return busca;
       }
    },
+
    venderAuto: function(patNum){
       let autoVenta = this.buscarAuto(patNum)
       if (autoVenta == null){
@@ -21,21 +22,26 @@ let concesionaria = {
          return autoVenta;
       }
    },
+
    autosParaLaVenta: function(){
       return this.autos.filter((element) => element.vendido == false);
    },
+
    autosNuevos: function(){
       return this.autosParaLaVenta().filter((element) => element.km < 100);
    },
+
    listaDeVentas: function(){
-   let vendidos = this.autos.filter((element) => element.vendido == true);
-   let venta = [];
-   vendidos.map((element) => venta.push(element.precio));
-   return venta;
+      let vendidos = this.autos.filter((element) => element.vendido == true);
+      let venta = [];
+      vendidos.map((element) => venta.push(element.precio));
+      return venta;
    },
+
    totalDeVentas: function(){
       return this.listaDeVentas().reduce((acum, num) => acum + num,0);
    },
+
    puedeComprar:function(auto, persona){
       let cuota = auto.precio/auto.cuotas;
       if(auto.precio < persona.capacidadDePagoTotal && cuota < persona.capacidadDePagoEnCuotas ){
@@ -44,6 +50,7 @@ let concesionaria = {
          return false;
       }
    },
+   
    autosQuePuedeComprar: function(persona){
       return this.autosParaLaVenta().filter(element => this.puedeComprar(element,persona));
    },
