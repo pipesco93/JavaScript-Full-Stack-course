@@ -3,22 +3,22 @@ const autosImportados = require('./autos');
 
 
 let concesionaria = {
-   autos: autosImportados, 
+   autos: autosImportados,
    buscarAuto: function(patNum){
       let busca = this.autos.find((element) => element.patente == patNum);
-        if (busca == null){
-            return null;
-        } else {
-            return busca;
-        }
+      if (busca == null){
+         return null;
+      } else {
+         return busca;
+      }
    },
    venderAuto: function(patNum){
       let autoVenta = this.buscarAuto(patNum)
       if (autoVenta == null){
-        return "Este numero de patente no esta en el inventario"
+         return "Este numero de patente no esta en el inventario"
       } else{
-        autoVenta.vendido =true;
-        return autoVenta;
+         autoVenta.vendido =true;
+         return autoVenta;
       }
    },
    autosParaLaVenta: function(){
@@ -39,9 +39,9 @@ let concesionaria = {
    puedeComprar:function(auto, persona){
       let cuota = auto.precio/auto.cuotas;
       if(auto.precio < persona.capacidadDePagoTotal && cuota < persona.capacidadDePagoEnCuotas ){
-      	return true;
+         return true;
       } else {
-      	return false;
+         return false;
       }
    },
    autosQuePuedeComprar: function(persona){
