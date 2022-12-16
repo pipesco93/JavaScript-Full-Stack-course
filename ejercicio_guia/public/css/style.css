@@ -1,32 +1,100 @@
-.header {
-  overflow: hidden;
-  background-color: #f6f167;
-  padding: 20px 10px;
+header {
+    font-family: 'Roboto', sans-serif;
+    background-color: #EAC926;;
 }
 
-.header img {
-  float: left;
-  width: 100px;
-  height: 100px;
-  background: #f6f167;
+header h2 {
+    font-size: medium;
+    text-align: center;
 }
 
-.header a {
-  float: left;
-  color: black;
-  text-align: center;
-  padding: 35px;
-  text-decoration: none;
-  font-size: 20px;
-  line-height: 25px;
-  border-radius: 4px;
+body {
+    font-family: 'Roboto', sans-serif;
+
 }
 
-.header a:hover {
-  background-color: rgb(161, 185, 249);
-  color: black;
+footer{
+    background-color: white;
 }
 
-.header-right {
-  float: right;
+
+main h2{
+    text-align: center;
+    font-size: 24px;
+
+}
+
+h4{
+    text-align: center;
+}
+
+img {
+    align-items: center;
+}
+
+.busca {
+    outline: #000000 solid 1px;
+}
+
+.buscar {
+    text-align: center;
+}
+
+.burger-menu {
+    text-align: center;
+    
+}
+
+.fa-bars {
+    background-color: #1259c3;
+    padding: 8px;
+    color: white;
+    border-radius: 5px;
+}
+
+.list ul a {
+    color: #000000;
+    text-decoration: none;
+    text-align: center;
+  }
+
+footer i {
+    text-align: center;
+    color: #1259c3;
+    font-size: 2em;
+}
+
+footer div{
+    text-align: center;
+    margin-bottom: 10px;
+    padding-top: 2rem;
+}
+
+footer h2 {
+    text-align: center;
+    color: #666;
+    font-size: 1.5em;
+    
+}
+
+footer p {
+    text-align: center;
+    color: #bab8b8;
+    font-size: 1em;
+}
+
+.descuento {
+    font-size: 16px;
+}
+
+.precio {
+    font-size: 18px;
+}
+
+main img {
+    width: 300px;
+    height:300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
