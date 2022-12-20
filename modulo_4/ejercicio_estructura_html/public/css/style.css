@@ -1,0 +1,42 @@
+/* el box sizing es para que al agregar bordes o padding mi elemento no aumente de tamano
+sino que le descuente a su tamano los valores de estos elementos, normalmente esto se usa en todos 
+o casi todos los elementos a si que lo declaro como un universal de lasiguiente manera */
+* {
+  box-sizing: border-box;
+}
+
+
+  .contenedor01 {
+    width: 90%;
+    max-width: 1000px;
+    padding: 20px;
+    border: solid 5px black;
+    background-color: salmon;
+    margin: auto;
+  }
+
+.contenedor02 {
+    width: 90vw;
+    padding: 20px;
+    background-color: green;
+    box-sizing: border-box;
+    margin: auto;
+  }
+
+   /*Media qeries mepermite crear condiciones para los diferentes anchosde pntalla */
+   @media (min-width: 570px) {
+    body {
+      background-color: rgb(164, 237, 237);
+    }
+
+    .contenedor02 {
+      width: 95vw;
+      padding: 25px;
+      border: solid 5px rgb(216, 245, 54);
+      background-color: rgb(68, 234, 42);
+      box-sizing: border-box;
+      margin: auto;
+      color: aliceblue;
+    }
+
+  }

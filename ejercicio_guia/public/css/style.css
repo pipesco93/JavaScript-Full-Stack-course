@@ -1,35 +1,14 @@
+/*-------------------- Global*------------------------------*/
+* {
+    margin:0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*-------------------- Header------------------------------*/
 header {
-    font-family: 'Roboto', sans-serif;
-    background-color: #EAC926;;
-}
-
-header h2 {
-    font-size: medium;
-    text-align: center;
-}
-
-body {
-    font-family: 'Roboto', sans-serif;
-
-}
-
-footer{
-    background-color: white;
-}
-
-
-main h2{
-    text-align: center;
-    font-size: 24px;
-
-}
-
-h4{
-    text-align: center;
-}
-
-img {
-    align-items: center;
+    background-color: #EAC926;
+    width: 100%;
 }
 
 .busca {
@@ -58,6 +37,97 @@ img {
     text-align: center;
   }
 
+
+/*-------------------- Body------------------------------*/
+body {
+    background-color: #ebebeb;
+}
+
+/*-------------------- Main------------------------------*/
+main {
+    width: 100%;
+    margin: auto;
+}
+
+.banner {
+    width: 100%;
+}
+
+
+/*-------------------- Section------------------------------*/
+section {
+    margin: auto;
+    width: 90%;
+}
+
+
+/*-------------------- Article------------------------------*/
+
+article div {
+    background-color: white;
+    margin: auto;
+    padding: 10px;
+    width: 95%;
+    border: solid 1px #ebebeb;
+    text-align: left;
+}
+
+article h4 {
+    text-align: left;
+}
+
+.card {
+    margin: 10px auto;
+    width: 90%
+}
+
+article i {
+    color: rgb(4, 129, 4);
+}
+
+section article h2 {
+    text-align: center;
+    color: rgb(125, 125, 125);
+    font-size: larger;
+    font-weight: 400;
+    text-align: left;
+}
+
+section h2{
+    text-align: center;
+    font-size: 24px;
+    color: rgb(73, 73, 73);
+    font-size: larger;
+    font-weight: 700;
+    text-align: left;
+}
+
+.descuento	 {
+    color: green;
+    font-size: small;
+    font-weight: 600;
+}
+
+.precio {
+    font-size: 18px;
+    color:black;
+    font-size: 16px;
+    font-weight: 500;
+    font-size: large;
+}
+
+article img {
+    width: 95%;
+    height:95%;
+    display: block;
+    margin: auto;
+}
+
+footer{
+    background-color: white;
+}
+
+/*-------------------- Footer------------------------------*/
 footer i {
     text-align: center;
     color: #1259c3;
@@ -83,18 +153,3 @@ footer p {
     font-size: 1em;
 }
 
-.descuento {
-    font-size: 16px;
-}
-
-.precio {
-    font-size: 18px;
-}
-
-main img {
-    width: 300px;
-    height:300px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
