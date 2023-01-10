@@ -230,7 +230,7 @@ footer p {
     font-size: 1em;
 }
 
-@media (min-width: 361px) {
+@media (min-width: 376px) {
     .list {
         display: none;
     }
@@ -238,7 +238,22 @@ footer p {
     .descripcion {
         display: block;
     }
-  }
+
+    .logo {
+        width: 50%;
+    }
+
+    .logo-search {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: 5px;
+    }
+
+    .logo-search input {
+        width: 80%;
+    }
+}
 
   @media (min-width: 796px) {
     .productos {
@@ -270,6 +285,15 @@ footer p {
     .burger-menu {
         display: none;
     }
+
+    .logo-search {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-grow: 0.5;
+    }
+
+   
 
   }
 
