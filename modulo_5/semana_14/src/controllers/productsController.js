@@ -10,6 +10,8 @@ const controller = {
 	// Root - Show all products
 	index: (req, res) => {
 		// Do the magic
+		res.render(path.join(__dirname,'../views/products'),{'allProducts':products})
+	
 	},
 
 	// Detail - Detail from one product
