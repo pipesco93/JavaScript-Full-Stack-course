@@ -9,7 +9,6 @@ const about = (req, res) => {
     res.sendFile(path.join(__dirname, '../views/about.html'));
 };
 
-
 const controlador = {
     index,
     about

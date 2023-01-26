@@ -3,12 +3,12 @@ const path = require('path');
 
 // Se crea la ruta home
 const index = (req, res) => {
-    res.sendFile(path.join(__dirname, '../views/index.html'));
+    res.render(path.join(__dirname, '../views/index'));
 };
 
 // Se crea la ruta detalles
 const detallesMenu = (req, res) => {
-    res.sendFile(path.join(__dirname, '../views/detallesMenu.html'));
+    res.render(path.join(__dirname, '../views/detalleMenu'));
 };
 
 // Se crea el objeto que se va a enviar a main.js en la carpet arouters
