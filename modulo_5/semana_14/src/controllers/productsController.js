@@ -84,7 +84,7 @@ const controller = {
 			//console.log(products);
 		});
 		const dataToUpdate = JSON.stringify(products);
-		console.log(dataToUpdate);
+		//console.log(dataToUpdate);
 		fs.writeFileSync("./src/data/productsDataBase.json", dataToUpdate)
 		res.redirect('/products');
 	},
