@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modify Artist</title>
+</head>
+<body>
+    <h1>Create new Artist</h1>
+    <form action="/edit-confirm?_method=PUT" method="POST">
+        <label for="id">Id</label>
+        <p><input type="text" name="id" id="" required></p>
+        <label for="name">Name </label>
+        <p><input type="text" name="name" id="" required></p>
+        
+        <p> <button type="submit">Modify</button>
+            
+        <a  class="botonVolver" href="http://localhost:3001/artist">All artists</a></p>
+    </form>
+</body>
+</html>
