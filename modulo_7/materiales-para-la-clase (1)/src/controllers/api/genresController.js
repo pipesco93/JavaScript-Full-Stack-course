@@ -12,7 +12,8 @@ module.exports = {
                         totatl: genres.length,
                         url: "api/genres"
                     },
-                    data: genres})
+                    data: genres
+                })
             })
     },
     'detail': (req, res) => {
@@ -21,8 +22,8 @@ module.exports = {
             .then(genre => {
                 return res.status(200).json({
                     data: genre,
-                    satus:200,
-                    url: `api/genres/`+req.params.id
+                    satus: 200,
+                    url: `api/genres/${req.params.id}`
                 });
             });
     }

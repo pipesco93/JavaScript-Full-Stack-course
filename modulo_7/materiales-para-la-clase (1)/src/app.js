@@ -8,7 +8,8 @@ const app = express();
 const indexRouter = require('./routes/index');
 const moviesRoutes = require('./routes/moviesRoutes');
 const genresRoutes = require('./routes/genresRoutes');
-const apiGenres = require('./routes/api/genresRoutes');
+const apiGenresRoutes = require('./routes/api/genresRoutes');
+const apiMoviesRoutes = require('./routes/api/moviesRoutes');
 //Aquí pueden colocar las rutas de las APIs
 
 
@@ -20,15 +21,16 @@ app.use(express.static(path.resolve(__dirname, '../public')));
 
 //URL encode  - Para que nos pueda llegar la información desde el formulario al req.body
 app.use(express.urlencoded({ extended: false }));
-
+app.use(express.json());
 //Aquí estoy disponiendo la posibilidad para utilizar el seteo en los formularios para el usod e los metodos put ó delete
 app.use(methodOverride('_method'));
 
 app.use('/', indexRouter);
-app.use('/api/genres', apiGenres);
+app.use('/api/genres', apiGenresRoutes);
+app.use('/api/movies', apiMoviesRoutes);
 app.use(moviesRoutes);
 app.use(genresRoutes);
 
 
 //Activando el servidor desde express
-app.listen('3001', () => console.log('Servidor corriendo en el puerto 3001'));
+app.listen('3002', () => console.log('Servidor corriendo en el puerto 3002'));
