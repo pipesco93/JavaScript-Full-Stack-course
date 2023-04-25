@@ -13,3 +13,4 @@ if(nombre) {
 }
 
 document.querySelector('.container').style.display = "block";
+
