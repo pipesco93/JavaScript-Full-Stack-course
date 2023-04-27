@@ -40,3 +40,21 @@
 .read-the-docs {
   color: #888;
 }
+
+
+.row-movies {
+  list-style-type: none;
+}
+
+.titu-logo {
+  display: flex;
+}
+
+.row-movies h2 {
+  margin: 10px;
+}
+
+.row-movies img {
+  width: 1rem;
+  margin: 15px;
+}
