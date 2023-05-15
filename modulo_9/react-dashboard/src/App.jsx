@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './App.css'
 import Pelicula from './components/Pelicula'
-import ContentRowMovies from './components/ContentRowMovies'
+import ContentRowMovies from './components/ContentRowMovies/ContentRowMovies'
 import {BrowserRouter, Link, Route} from 'react-router-dom'
 
 function App() {
