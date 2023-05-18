@@ -8,18 +8,27 @@ import axios from 'axios';
 
 
 const propsCajas = () => {
-    const [state, setState ] = useState([]);
+
+    const [state, setState ] = useState({});
 
     const apiInfo  = async () => {
         const json = await axios.get('http://localhost:3001/api/products')
         //console.log(json)
-        setState(json.data)
+        setState(json.data);
     };
 
     useEffect(() => {
         apiInfo();
+        
     }, []);
-    console.log(state)
+
+    //const {destacado} = state.countByCategory;
+    console.log(state.countByCategory?.destacado)
+    //console.log(state.countByCategory);
+
+    data[0].cifra = state.count;
+    data[1].cifra = state.countByCategory?.destacado;
+    data[2].cifra = state.countByCategory?.noDestacado;
 
     return (
         <div>

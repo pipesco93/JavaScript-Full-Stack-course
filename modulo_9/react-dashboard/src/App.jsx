@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import './App.css'
 import Pelicula from './components/Pelicula'
 import ContentRowMovies from './components/ContentRowMovies/ContentRowMovies'
+import NavBar from './components/NavBar/NavBar'
 import {BrowserRouter, Link, Route} from 'react-router-dom'
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         >
           <h2>Este es un children</h2>
         </Pelicula> */}
+        <NavBar />
         <ContentRowMovies />
 
       </main>
